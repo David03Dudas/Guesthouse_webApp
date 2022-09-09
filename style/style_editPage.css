@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#edit-form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 40%;
+    background-color: khaki;
+    border-radius: 10%;
+    z-index: 20;
+}
+
+#edit-form div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+    line-height: 200%;
+}
+
+#edit-form div * {
+    margin-bottom: 10px;
+}
+
+#edit-form button {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10%;
+    font-size: 2vh;
+}
+
+.rowForm {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    border: 1px solid black;
+    height: fit-content;
+}
+
+.rowForm:hover {
+    background-color: grey;
+    color: white;
+}
+
+#rezervari {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 90%;
+    overflow-y: scroll;
+}
+
+p {
+    border-right: 1px dotted black;
+    border-left: 1px dotted black;
+    font-size: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4vh;
+    height: fit-content;
+}
+
+button {
+    font-size: 2.4vh;
+}

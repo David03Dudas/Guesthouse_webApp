@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.date-rezervare {
+    display: grid;
+    grid-template-columns: repeat(5, 40% 13% 13% 17% 17%);
+}
+
+.label_and_checkbox {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 90% 10%);
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    width: 100%;
+}
+
+form {
+    position: absolute;
+    width: 90%;
+    height: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid black;
+}
+
+#submit_btn {
+    padding: 7px;
+    border-radius: 10px;
+    border: 1px solid black;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    position: fixed;
+    bottom: 0%;
+    overflow: visible;
+
+}
+
+p {
+    text-align: center;
+    border-right: 1px black dotted;
+    border-left: 1px black dotted;
+    padding: 10px;
+}
+
+#rezervations {
+    overflow-y: scroll;
+    height: 90%;
+}
+
+#form-header button {
+    grid-template-columns: repeat(2, 90% 10%);
+}
+
+

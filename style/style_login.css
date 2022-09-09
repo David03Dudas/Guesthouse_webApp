@@ -1,0 +1,38 @@
+body {
+    background-color: grey;
+}
+
+form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    height: 70%;
+    background-color: rgba(0, 100, 0, 0.5);
+    border: 2px solid black;
+    border-radius: 20%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+form div {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+/* FOR MOBILE */
+@media only screen and (max-device-width: 800px){
+    form {
+        width: 90%;
+    }
+}
+

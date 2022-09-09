@@ -1,0 +1,392 @@
+* {
+    margin: 0;
+}
+
+.ocupat {
+    /*text-shadow: -2px 2px 0 red,
+                          2px 2px 0 red,
+                         2px -2px 0 red,
+                        -2px -2px 0 red;*/
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border: 2px solid red !important;
+}
+
+.disponibila {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border: 2px solid rgb(0, 255, 0) !important;
+}
+
+/* ZIUA CURENTA */
+
+#ziua-curenta {
+    position: absolute;
+    height: 100vh;
+    width: 60%;
+    left: 0;
+    top: 0;
+    border-right: 2px solid black;
+}
+
+#afisare-data-curenta {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 10%;
+    background-color: black;
+}
+
+#box-header-data-curenta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    justify-content: center;
+}
+
+.elemente-header-data-curenta {
+    color: white;
+    text-align: center;
+}
+
+#lista-camere {
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    height: 20%;
+    background-color: rgb(97, 97, 97);
+}
+
+#camere {
+    width: 59.5%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    font-size: 2vh;
+    border-right: 2px black solid;
+}
+
+#camere button {
+    width: auto;
+    height: auto;
+    border: 1px solid black;
+    border-top: none;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5vmin;
+}
+
+#legenda {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40%;
+    height: 100%;
+    border-left: 2px solid black;
+}
+
+#culori {
+    height: 100%;
+    width: 20%;
+    position: absolute;
+    left:0;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.cam-matrimonial {
+    background-color: olive;
+}
+
+.cam-2paturi {
+    background-color: teal;
+}
+
+.cam-4paturi {
+    background-color: darkslategray;
+}
+
+#descriere {
+    height: 100%;
+    width: 80%;
+    position: absolute;
+    right: 0;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+#descriere p {
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#lista-rezevari {
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    height: 70%;
+    overflow-y: scroll;
+    background-color: darkgray;
+}
+
+.rezervari {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,30% 30% 40%);
+}
+
+.rezervari p {
+    border-bottom: 3px solid black;
+    border-right: 1px dotted black;
+    border-left: 1px dotted black;
+    font-size: 2.2vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-wrap: break-word;
+    word-break: break-all;
+}
+
+#header_rezervari {
+    font: 2vh;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+}
+
+/* CALENDAR */
+
+#calendar {
+    background-color: rgb(90, 90, 90);
+    height: 50%;
+    width: 40%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#calendar-header {
+    background-color: rgb(38, 126, 85);
+    height: 20%;
+    width: 100%;
+    position: relative;
+    top: 0;
+}
+
+#data-curenta {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);;
+}
+
+#data-curenta * {
+    margin: 0;
+    text-align: center;
+}
+
+#luna {
+    color: white;
+}
+
+#anul {
+    color: white;
+}
+
+#next-luna {
+    position: absolute;
+    right: 2%;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: white;
+    font-size: 3vh;
+}
+
+#prev-luna {
+    position: absolute;
+    left: 2%;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: white;
+    font-size: 3vh;
+}
+
+#next-luna:hover, #prev-luna:hover {
+    background-color: rgb(18, 106, 65);
+    border-radius: 5px;
+}
+
+#datele {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    font-size: 2vh;
+}
+
+#datele p {
+    text-align: center;
+    color: white;
+}
+
+#datele button {
+    background: none;
+    border: none;
+    height: 5vh;
+    font-size: 2vh;
+}
+
+#datele button:hover {
+    background-color:rgb(70, 70, 70);
+}
+
+.date {
+    color: white;
+}
+
+.predate, .postdate {
+    color: grey;
+}
+
+.actualDay {
+    background-color: rgb(60, 60, 60) !important;
+}
+
+.actualDay:hover {
+    background-color:rgb(70, 70, 70) !important;
+}
+
+.outputDay {
+    border: 2px solid black !important;
+}
+
+.calendar_ocupat {
+    background-color: rgb(204, 68, 68) !important;
+}
+
+.calendar_disponibil {
+    background-color: aquamarine;
+}
+
+#calendar-home-btn {
+    border: none;
+    background: none;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    right: 5%;
+    width: 5vh;
+    height: 5vh;
+    font-size: 5vh;
+}
+
+#calendar-home-btn:hover {
+    background: grey;
+}
+
+#calendar-rezervations-list-btn {
+    border: none;
+    background: none;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    width: 5vh;
+    height: 5vh;
+    font-size: 5vh;
+}
+
+#calendar-rezervations-list-btn:hover {
+    background-color: grey;
+}
+
+/* OPTIUNI */
+
+#optiuni {
+    background-color: rgb(150, 150, 150);
+    height: 50%;
+    width: 40%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+#optiuni button {
+    font-size: 5vh;
+    font-weight: bold;
+}
+
+#form-optiuni {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+#opt-add {
+    background-color: lightgreen;
+}
+
+#opt-add:hover {
+    background-color: rgb(123, 201, 123);
+}
+
+#opt-delete {
+    background-color: lightcoral;
+}
+
+#opt-delete:hover {
+    background-color: rgb(201, 107, 107);
+}
+
+#opt-edit {
+    background-color: burlywood;
+}
+
+#opt-edit:hover {
+    background-color: rgb(187, 155, 113);
+}
+
+/* ADD REZERVARE */
+
+#add-rez-form {
+    border: 1px solid black;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 50%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 5%;
+    z-index: 10;
+    background-color: white;
+}
+
+/* FOR MOBILE */
+@media only screen and (max-device-width: 800px){
+    #optiuni {
+        display: none;
+    }
+    #calendar {
+        top: 0;
+        width: 100%;
+        height: 50vh;
+    }
+    #ziua-curenta {
+        top: 50vh;
+        width: 100%;
+    }
+}

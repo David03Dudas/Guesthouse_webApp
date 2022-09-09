@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+}
+
+table {
+    width: 100%;
+    margin: auto;
+}
+
+tr {
+    border: 1px solid black;
+    height: fit-content;
+}
+
+tr:hover {
+    background-color: darkgray;
+}
+
+th {
+    border: 1px dotted black;
+    height: fit-content;
+}
